@@ -1,0 +1,18 @@
+@TmsApi_HostAddress = http://localhost:5154
+
+// 401 unauthorized
+GET {{TmsApi_HostAddress}}/api/assessments/results
+Accept: application/json
+### 
+
+GET {{TmsApi_HostAddress}}/api/enrollments/worker-smoke
+Accept: application/json
+
+
+###
+
+GET /api/enrollments
+
+
+
+

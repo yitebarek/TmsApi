@@ -1,0 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using TmsApi.Entities;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace TmsApi.Configuration
+{
+    public class CourseConfiguration : IEntityTypeConfiguration<Course>
+    {
+        public void Configure(EntityTypeBuilder<Course> builder)
+        {
+            builder.HasKey(c => c.Id);
+            builder.Property(c => c.Code).IsRequired().HasMaxLength(10);
+            builder.Property(c => c.Title).IsRequired().HasMaxLength(200);
+            builder.HasIndex(c => c.Code).IsUnique();
+            builder.Property(c => c.MaxCapacity).IsRequired();
+            //one to many relationship between course and enrollment
+            builder.HasMany(c => c.Enrollments).WithOne(e => e.Course).HasForeignKey(e => e.CourseId);
+        }
+    }
+}
