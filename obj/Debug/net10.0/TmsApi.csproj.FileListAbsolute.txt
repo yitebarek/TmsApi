@@ -121,3 +121,4 @@ C:\Windows\System32\TmsApi\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspace
 C:\Windows\System32\TmsApi\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Windows\System32\TmsApi\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Windows\System32\TmsApi\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Windows\System32\TmsApi\obj\Debug\net10.0\TmsApi.sourcelink.json
